@@ -1,12 +1,6 @@
 const renderLicense = require ('./utils/helpers.js')
 const fs = require("fs");
 const inquirer = require('inquirer');
-// fs.readFile("data.csv", "utf8", (error, data) =>
-//   error ? console.error(error) : console.log(data)
-// );
-// fs.writeFile("README.md", process.argv[2], (err) =>
-//   err ? console.error(err) : console.log("Success!")
-// );
 function askUser(){
 inquirer.prompt([
   {
@@ -47,17 +41,25 @@ inquirer.prompt([
     choices: ["Apache 2.0 License", "Boost Software License 1.0", "CC0", "Eclipse Public License 1.0"],
     name: 'license'
   },
-  // 'What is your github username?'
-  // 'What is your email?'
+  {
+    type: 'input',
+    message: 'What is your github username?',
+    name: "github"
+  },
+  {
+    type: 'input',
+    message: 'What is your email',
+    name: 'email'
+  },
 ]).then(answers => {
-    // createString(answers)
     return `# ${answers.title}
 ${renderLicense(answers.license)}
 ## table of contents
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributors](#contributor)
+- [Contributors](#contributors)
+- [Questions](#questions)
 
 ### Description
 ${answers.description}
@@ -69,9 +71,12 @@ ${answers.installation}
 ${answers.usage}
 
 ### Contributors
-${answers.contributor}
+${answers.contributor ?? ""}
 
-${answers.description}
+### Questions
+You can see my Github profile at https://${answers.github}.github.io ,
+and you can reach me for questions at https://${answers.email}
+
 `
 }).then(READMEstring => {
 fs.writeFile('README.md', READMEstring, (err) => {
@@ -81,13 +86,5 @@ fs.writeFile('README.md', READMEstring, (err) => {
 })
 }
 function createString(data){
-    // return `
-    // # ${data.title}
-    // `
 }
 askUser()
-// ` 
-//    ## Readme
-//    # ${title}
-//    # 
-//    `;
