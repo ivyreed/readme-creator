@@ -1,21 +1,26 @@
-# a
-[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+# README Creator
+
 ## table of contents
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributors](#contributor)
+- [Resources](#resources)
+- [Questions](#questions)
 
 ### Description
-a
+README Creator makes a README for you from your answers in the terminal
 
 ### Installation
-a
+Clone this repository then open up the terminal in VS code. then type node index.js into the terminal. from there, answer the questions prompted in the terminal. This README should be overwritten to display your new README!
 
 ### Usage
-n
+To make READMEs easier to create
 
-### Contributors
-undefined
+### Resources
 
-a
+![the display should show as follows.]https://youtu.be/mDIOK_GHM8A
+
+### Questions
+You can see my Github profile at https://ivyreed.github.io ,
+and you can reach me for question at https://idcfu788@gmail.com
+
