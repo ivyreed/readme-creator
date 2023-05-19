@@ -14,13 +14,14 @@ README Creator makes a README for you from your answers in the terminal
 Clone this repository then open up the terminal in VS code. then type node index.js into the terminal. from there, answer the questions prompted in the terminal. This README should be overwritten to display your new README!
 
 ### Usage
-To make READMEs easier to create
+To make READMEs easier to create 
 
 ### Resources
 
-![the display should show as follows.]https://youtu.be/mDIOK_GHM8A
+Here is a video of the application working
+https://youtu.be/mDIOK_GHM8A
 
 ### Questions
-You can see my Github profile at https://ivyreed.github.io ,
+You can see my Github profile at https://github.com/ivyreed ,
 and you can reach me for question at https://idcfu788@gmail.com
 

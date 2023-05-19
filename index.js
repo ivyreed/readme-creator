@@ -74,7 +74,7 @@ ${answers.usage}
 ${answers.contributor ?? ""}
 
 ### Questions
-You can see my Github profile at https://${answers.github}.github.io ,
+You can see my Github profile at https://github.com/${answers.github} ,
 and you can reach me for questions at https://${answers.email}
 
 `
